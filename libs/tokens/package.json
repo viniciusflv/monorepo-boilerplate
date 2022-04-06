@@ -1,0 +1,16 @@
+{
+  "name": "@boilerplate/tokens",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "scripts": {
+    "build": "style-dictionary build"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.1.1",
+    "@configs/eslint": "*",
+    "@configs/babel": "*",
+    "@configs/jest": "*",
+    "@configs/typescript": "*"
+  }
+}
