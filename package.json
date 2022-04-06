@@ -2,18 +2,24 @@
   "name": "monorepo-boilerplate",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "npm@8.5.0",
   "workspaces": [
     "apps/*",
     "configs/*",
     "libs/*"
   ],
   "scripts": {
+    "sb": "turbo run sb",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -22,12 +28,14 @@
     "@configs/eslint": "*",
     "@configs/jest": "*",
     "@configs/prettier": "*",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
     "husky": "^7.0.4",
     "turbo": "latest"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
-  },
-  "packageManager": "npm@8.5.0"
+  }
 }

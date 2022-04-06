@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es6: true,
   },
   extends: [
@@ -43,6 +44,7 @@ module.exports = {
     {
       files: ['*'],
       rules: {
+        '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
