@@ -1,0 +1,11 @@
+{
+  "name": "@configs/typescript",
+  "private": true,
+  "files": [
+    "base.json",
+    "react-library.json"
+  ],
+  "dependencies": {
+    "typescript": ">=4"
+  }
+}

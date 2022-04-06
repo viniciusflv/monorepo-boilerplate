@@ -1,19 +1,28 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "monorepo-boilerplate",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "configs/*",
+    "libs/*"
   ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "prettier": "^2.5.1",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@configs/babel": "*",
+    "@configs/eslint": "*",
+    "@configs/jest": "*",
+    "@configs/prettier": "*",
+    "husky": "^7.0.4",
     "turbo": "latest"
   },
   "engines": {
