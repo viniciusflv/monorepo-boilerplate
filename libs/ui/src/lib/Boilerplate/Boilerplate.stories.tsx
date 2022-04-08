@@ -13,5 +13,5 @@ const Template = (args: BoilerplateProps) => <Boilerplate {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Boilerplate',
+  children: 'Boilerplate =>',
 };

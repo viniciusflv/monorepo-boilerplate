@@ -1,3 +1,5 @@
+import '@boilerplate/tokens/dist/fonts.css';
+
 import './reset.css';
 
 export const parameters = {

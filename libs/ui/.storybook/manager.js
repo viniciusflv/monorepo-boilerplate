@@ -1,7 +1,8 @@
+import { color } from '@boilerplate/tokens';
 import { addons } from '@storybook/addons';
-import { create, themes } from '@storybook/theming';
+import { create } from '@storybook/theming';
 
-const HIGHLIGHT_COLOR = '#00f';
+const HIGHLIGHT_COLOR = color.base.blue;
 const BACKGROUND_COLOR = '#fff';
 const CONTROLS_COLOR = '#f9f9f9';
 const TEXT_COLOR = '#555555';
