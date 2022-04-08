@@ -1,0 +1,50 @@
+{
+  "name": "boilerplate-gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "boilerplate-gatsby",
+  "author": "Vinicius Victorino",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "prd": "npm run clean && npm run build && npm run serve",
+    "start": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "dev": "npm run start",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@boilerplate/ui": "*",
+    "@boilerplate/tokens": "*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-error-boundary": "^3.1.4"
+  },
+  "devDependencies": {
+    "@configs/jest": "*",
+    "@configs/babel": "*",
+    "@configs/eslint": "*",
+    "@configs/typescript": "*",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/react-helmet": "6.1.5",
+    "gatsby": "^4.11.2",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-plugin-sitemap": "^5.11.1",
+    "gatsby-plugin-offline": "^5.11.1",
+    "gatsby-plugin-manifest": "^4.11.1",
+    "gatsby-transformer-sharp": "^4.11.0",
+    "gatsby-source-filesystem": "^4.11.1",
+    "gatsby-plugin-minify-html": "^1.0.4",
+    "gatsby-plugin-react-helmet": "^5.11.0",
+    "gatsby-plugin-google-analytics": "^4.11.0",
+    "cross-env": "^7.0.3"
+  }
+}

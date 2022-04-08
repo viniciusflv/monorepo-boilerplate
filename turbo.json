@@ -5,11 +5,10 @@
       "outputs": ["dist/**", ".next/**"],
       "cache": false
     },
-    "sb": {},
     "lint": {},
     "test": {},
-    "dev": {
-      "cache": false
-    }
+    "sb": { "cache": false },
+    "dev": { "cache": false },
+    "prd": { "cache": false }
   }
 }

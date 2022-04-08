@@ -11,6 +11,7 @@
   "scripts": {
     "sb": "turbo run sb",
     "build": "turbo run build",
+    "prd": "turbo run prd --parallel",
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
     "lint": "turbo run lint",
