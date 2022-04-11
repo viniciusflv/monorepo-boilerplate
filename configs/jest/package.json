@@ -1,6 +1,10 @@
 {
   "name": "@configs/jest",
   "main": "index.js",
+  "files": [
+    "gatsby/",
+    "monorepo/"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
