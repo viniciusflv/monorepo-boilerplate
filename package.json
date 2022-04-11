@@ -9,12 +9,12 @@
     "libs/*"
   ],
   "scripts": {
-    "sb": "turbo run sb",
     "build": "turbo run build",
+    "sb": "turbo run sb --parallel",
     "prd": "turbo run prd --parallel",
     "dev": "turbo run dev --parallel",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
+    "test": "turbo run test --parallel",
+    "lint": "turbo run lint --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
   },

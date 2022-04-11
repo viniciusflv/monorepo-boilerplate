@@ -9,22 +9,19 @@ module.exports = {
     author: `Boilerplate`,
     locale: `pt-BR`,
     image: {
-      path: 'icons/icon-512x512.png',
-      type: 'image/png',
-      size: '512',
+      path: "icons/icon-512x512.png",
+      type: "image/png",
+      size: "512",
     },
   },
   jsxRuntime: `automatic`,
-  trailingSlash: 'ignore',
+  trailingSlash: "ignore",
   plugins: [
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     trackingId: 'GA',
-    //   },
-    // },
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
         start_url: `/`,
         name: `Boilerplate Gatsby`,
@@ -32,22 +29,24 @@ module.exports = {
         background_color: `#00f`,
         theme_color: `#00f`,
         display: `standalone`,
-        icon: 'src/images/icon.png',
+        icon: "src/images/icon.png",
         icon_options: {
           purpose: `any maskable`,
         },
       },
     },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: "images",
+        path: "./src/images/",
       },
-      __key: 'images',
+      __key: "images",
     },
     {
-      resolve: 'gatsby-plugin-minify-html',
+      resolve: "gatsby-plugin-minify-html",
       options: {
         debug: true,
         config: {
@@ -74,11 +73,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 };

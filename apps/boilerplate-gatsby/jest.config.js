@@ -1,1 +1,1 @@
-module.exports = require('@configs/jest');
+module.exports = require('@configs/jest/gatsby');
