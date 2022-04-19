@@ -1,3 +1,3 @@
-import "./reset.css";
+import './global.css';
 
-export { wrapPageElement, wrapRootElement } from "./gatsby-api";
+export { wrapPageElement, wrapRootElement } from './gatsby-api';

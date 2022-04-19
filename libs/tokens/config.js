@@ -136,12 +136,12 @@ module.exports = {
       files: [
         {
           format: 'javascript/nested',
-          destination: 'tokens.js',
+          destination: 'index.js',
           filter: 'not_asset',
         },
         {
           format: 'typescript/nested-declarations',
-          destination: 'tokens.d.ts',
+          destination: 'index.d.ts',
           filter: 'not_asset',
         },
       ],

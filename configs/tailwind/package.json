@@ -1,0 +1,14 @@
+{
+  "name": "@configs/tailwind",
+  "private": false,
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@boilerplate/tokens": "*",
+    "@configs/babel": "*",
+    "@configs/eslint": "*",
+    "@configs/jest": "*",
+    "@configs/typescript": "*",
+    "tailwindcss": "^3.0.24"
+  }
+}

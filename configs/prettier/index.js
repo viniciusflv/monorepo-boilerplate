@@ -6,6 +6,7 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
   arrowParens: 'always',
+  endOfLine: 'auto',
   useTabs: false,
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,

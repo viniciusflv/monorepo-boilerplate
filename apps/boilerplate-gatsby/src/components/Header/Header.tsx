@@ -1,3 +1,3 @@
 export function Header() {
-  return <header style={{ outline: '1px solid red' }}>Header</header>;
+  return <header className="bg-red-600 bg-base-green">Header</header>;
 }
