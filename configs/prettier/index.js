@@ -12,5 +12,5 @@ module.exports = {
   importOrderSortSpecifiers: true,
   importOrderGroupNamespaceSpecifiers: true,
   importOrderCaseInsensitive: true,
-  importOrder: ['^react', '^@booleon/(.*)$', '<THIRD_PARTY_MODULES>', '^[./]'],
+  importOrder: ['^react', '<THIRD_PARTY_MODULES>', '^[.]\\/', '^..\\/'],
 };
