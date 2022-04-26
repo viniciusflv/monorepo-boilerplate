@@ -1,6 +1,6 @@
-import { AppProps } from './App.types';
+import type { PropsWithChildren } from 'react';
 
-export function App({ children }: AppProps) {
+export function App({ children }: PropsWithChildren<unknown>) {
   // Add Providers here
   return <>{children}</>;
 }

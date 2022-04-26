@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet';
 
-import { useSiteMetadata } from '../../graphql/SiteMetadataFragment';
 import type { SEOProps } from './SEO.types';
+
+import { useSiteMetadata } from '../../graphql/SiteMetadataFragment';
 
 export function SEO(props: SEOProps) {
   const siteMetadata = useSiteMetadata();

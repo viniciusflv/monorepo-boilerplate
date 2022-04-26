@@ -1,0 +1,3 @@
+.main {
+  @apply flex flex-grow outline outline-1 outline-base-green;
+}

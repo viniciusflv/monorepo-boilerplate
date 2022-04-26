@@ -1,4 +1,4 @@
-import {
+import type {
   WrapPageElementBrowserArgs,
   WrapPageElementNodeArgs,
   WrapRootElementBrowserArgs,
@@ -8,10 +8,10 @@ import {
 import { App } from './src/containers/App';
 import { Layout } from './src/containers/Layout';
 
-export const wrapRootElement = (
-  props: WrapRootElementNodeArgs | WrapRootElementBrowserArgs,
-) => {
-  return <App>{props.element}</App>;
+export const wrapRootElement = ({
+  element,
+}: WrapRootElementBrowserArgs | WrapRootElementNodeArgs) => {
+  return <App>{element}</App>;
 };
 
 export const wrapPageElement = ({

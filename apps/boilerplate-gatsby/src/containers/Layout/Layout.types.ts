@@ -1,5 +1,7 @@
-import type { ReactNode } from 'react';
+import type { PropsWithChildren } from 'react';
 
-export type LayoutProps = {
-  children: ReactNode;
-};
+import type { PageProps } from 'gatsby';
+
+export type LayoutProps = PropsWithChildren<
+  Partial<Omit<PageProps, 'children'>>
+>;

@@ -1,3 +1,5 @@
+import './Header.css';
+
 export function Header() {
-  return <header className="bg-red-600 bg-base-green">Header</header>;
+  return <header className="header">Header</header>;
 }

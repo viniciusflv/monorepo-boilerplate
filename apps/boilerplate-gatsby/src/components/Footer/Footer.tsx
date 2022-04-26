@@ -1,3 +1,5 @@
+import './Footer.css';
+
 export function Footer() {
-  return <footer style={{ outline: '1px solid blue' }}>Footer</footer>;
+  return <footer className="footer">Footer</footer>;
 }

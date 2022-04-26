@@ -1,7 +1,7 @@
-import { MainProps } from './Main.types';
+import type { PropsWithChildren } from 'react';
 
-export function Main({ children }: MainProps) {
-  return (
-    <main style={{ flexGrow: 1, outline: '1px solid green' }}>{children}</main>
-  );
+import './Main.css';
+
+export function Main({ children }: PropsWithChildren<unknown>) {
+  return <main className="main">{children}</main>;
 }

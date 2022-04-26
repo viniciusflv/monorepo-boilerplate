@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby';
+
+export default {
   siteMetadata: {
     title: `Boilerplate Gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
@@ -9,7 +11,7 @@ module.exports = {
     author: `Boilerplate`,
     locale: `pt-BR`,
     image: {
-      path: `icons/icon-512x512.png`,
+      path: `/icons/icon-512x512.png`,
       type: `image/png`,
       size: `512`,
     },
@@ -75,4 +77,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-};
+} as GatsbyConfig;

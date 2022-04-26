@@ -1,8 +1,9 @@
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
-import '../../graphql/SiteMetadataFragment/mock';
 import { NotFound } from './NotFound';
+
+import '../../graphql/SiteMetadataFragment/mock';
 
 describe(`NotFound`, () => {
   it(`should have no SEO violations`, async () => {
