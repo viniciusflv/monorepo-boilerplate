@@ -33,10 +33,18 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': ['warn'],
+    '@typescript-eslint/sort-type-union-intersection-members': ['warn'],
     '@typescript-eslint/explicit-function-return-type': [
       'warn',
       {
         allowExpressions: true,
+      },
+    ],
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      {
+        prefer: 'type-imports',
+        disallowTypeAnnotations: true,
       },
     ],
   },
