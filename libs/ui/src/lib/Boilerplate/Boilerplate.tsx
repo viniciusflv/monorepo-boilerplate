@@ -1,6 +1,6 @@
 import { font } from '@boilerplate/tokens';
 
-import { BoilerplateProps } from './Boilerplate.types';
+import type { BoilerplateProps } from './Boilerplate.types';
 
 export function Boilerplate({ children, onPress }: BoilerplateProps) {
   return (

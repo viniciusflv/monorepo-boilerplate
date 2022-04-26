@@ -9,7 +9,7 @@
     "build": "node ./esbuild.js && npm run emit",
     "emit": "tsc --declaration --emitDeclarationOnly --outDir dist",
     "test": "jest",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src --fix"
   },
   "dependencies": {
     "react": "^17.0.2",

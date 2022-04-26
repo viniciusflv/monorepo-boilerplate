@@ -1,5 +1,5 @@
 import { Boilerplate } from './Boilerplate';
-import { BoilerplateProps } from './Boilerplate.types';
+import type { BoilerplateProps } from './Boilerplate.types';
 
 export default {
   title: 'Components/Boilerplate',
