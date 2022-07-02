@@ -1,0 +1,22 @@
+{
+  "name": "@configs/tsup",
+  "version": "0.0.1",
+  "description": "Tsup - Configuração para projetos da BrasilSeg",
+  "main": "index.js",
+  "private": false,
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.srv-cld.brasilseg.com.br/brasilseg-componentes/brasilseg-libs-monorepo.git"
+  },
+  "keywords": [
+    "tsup"
+  ],
+  "dependencies": {
+    "esbuild-node-externals": "^1.4.1",
+    "tsup": "^5.12.8"
+  }
+}

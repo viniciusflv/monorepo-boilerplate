@@ -1,4 +1,5 @@
 const { tailwind } = require('@boilerplate/tokens');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = (...content) => {
   return {
@@ -8,6 +9,24 @@ module.exports = (...content) => {
       colors: tailwind.colors,
       extend: {},
     },
-    plugins: [],
+    corePlugins: {
+      container: false,
+    },
+    plugins: [
+      plugin(function pressedPlugin({ addVariant }) {
+        addVariant('pressed', ' &[aria-pressed="true"]');
+        addVariant('adjacent', ' &~*');
+        addVariant('sibling', ' &+*');
+        addVariant('child', ' &>*');
+      }),
+      plugin(function ({ matchUtilities }) {
+        matchUtilities({
+          'grid-area': (gridArea) => ({ gridArea }),
+          'grid-areas': (gridAreas) => ({
+            gridTemplateAreas: gridAreas.replaceAll(',', ' '),
+          }),
+        });
+      }),
+    ],
   };
 };

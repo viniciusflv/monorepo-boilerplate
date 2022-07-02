@@ -9,6 +9,7 @@
     "libs/*"
   ],
   "scripts": {
+    "build.token": "turbo run build --scope=\"@boilerplate/tokens\"",
     "build": "turbo run build",
     "sb": "turbo run sb --parallel",
     "prd": "turbo run prd --parallel",

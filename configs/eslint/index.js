@@ -62,6 +62,14 @@ module.exports = {
         'react/prop-types': 'off',
         'react/display-name': 'off',
         noImplicitAny: 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            argsIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
+            caughtErrorsIgnorePattern: '^_',
+          },
+        ],
       },
     },
   ],
